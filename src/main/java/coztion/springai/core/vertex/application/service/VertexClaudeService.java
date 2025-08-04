@@ -22,9 +22,6 @@ public class VertexClaudeService {
     @Value("${genai.google.project-id}")
     private String googleProjectId;
 
-    @Value("${genai.google.location}")
-    private String googleLocation;
-
     @Value("${genai.google.credentials.scope}")
     private String googleCredentialsScope;
 
