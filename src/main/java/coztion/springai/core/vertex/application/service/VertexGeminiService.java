@@ -51,11 +51,11 @@ public class VertexGeminiService {
 
                         while (iterator.hasNext()) {
                             GenerateContentResponse generatedContentResponse = iterator.next();
-                            String answer = generatedContentResponse.text();
+                            String generatedText = generatedContentResponse.text();
 
                             VertexGeminiGenerateResult vertexGeminiGenerateResult = iterator.hasNext()
-                                    ? VertexGeminiGenerateResult.next(answer)
-                                    : VertexGeminiGenerateResult.complete(answer);
+                                    ? VertexGeminiGenerateResult.next(generatedText)
+                                    : VertexGeminiGenerateResult.complete(generatedText);
                             emitter.next(vertexGeminiGenerateResult);
                         }
                     }
