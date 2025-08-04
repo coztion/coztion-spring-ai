@@ -11,19 +11,19 @@ public class VertexGeminiGenerateResult {
     @Builder.Default
     private boolean completed = false;
 
-    private String answer;
+    private String generatedText;
 
-    public static VertexGeminiGenerateResult next(String answer) {
+    public static VertexGeminiGenerateResult next(String generatedText) {
         return VertexGeminiGenerateResult.builder()
                 .completed(false)
-                .answer(answer)
+                .generatedText(generatedText)
                 .build();
     }
 
-    public static VertexGeminiGenerateResult complete(String answer) {
+    public static VertexGeminiGenerateResult complete(String generatedText) {
         return VertexGeminiGenerateResult.builder()
                 .completed(true)
-                .answer(answer)
+                .generatedText(generatedText)
                 .build();
     }
 }

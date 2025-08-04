@@ -2,6 +2,7 @@ package coztion.springai.core.vertex.application.mapper;
 
 import coztion.springai.core.vertex.application.model.VertexGeminiGenerateCommand;
 import coztion.springai.core.vertex.application.model.VertexGenerateCommand;
+import coztion.springai.core.vertex.application.model.VertexImagenGenerateCommand;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -10,5 +11,7 @@ public interface VertexCommandMapper {
 
     VertexCommandMapper INSTANCE = Mappers.getMapper(VertexCommandMapper.class);
 
-    VertexGeminiGenerateCommand toCommand(VertexGenerateCommand command);
+    VertexGeminiGenerateCommand toGeminiCommand(VertexGenerateCommand command);
+
+    VertexImagenGenerateCommand toImagenCommand(VertexGenerateCommand command);
 }

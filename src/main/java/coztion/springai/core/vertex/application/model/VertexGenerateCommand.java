@@ -15,11 +15,19 @@ public class VertexGenerateCommand {
     private GenerateConfig config;
 
     public VertexGeminiGenerateCommand toGeminiCommand() {
-        return VertexCommandMapper.INSTANCE.toCommand(this);
+        return VertexCommandMapper.INSTANCE.toGeminiCommand(this);
+    }
+
+    public VertexImagenGenerateCommand toImagenCommand() {
+        return VertexCommandMapper.INSTANCE.toImagenCommand(this);
     }
 
     public boolean isGemini() {
         return config.model.startsWith("gemini");
+    }
+
+    public boolean isImagen() {
+        return config.model.startsWith("imagen");
     }
 
     @Getter
