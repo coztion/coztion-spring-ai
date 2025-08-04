@@ -1,4 +1,4 @@
-package coztion.springai.core.vertex.application.model;
+package coztion.springai.core.vertex.application.model.result;
 
 import lombok.AccessLevel;
 import lombok.Builder;

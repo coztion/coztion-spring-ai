@@ -1,4 +1,4 @@
-package coztion.springai.core.vertex.application.model;
+package coztion.springai.core.vertex.application.model.command;
 
 import coztion.springai.core.vertex.application.mapper.VertexCommandMapper;
 import java.util.List;

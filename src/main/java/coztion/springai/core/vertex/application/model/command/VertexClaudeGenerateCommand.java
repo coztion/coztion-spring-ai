@@ -1,4 +1,4 @@
-package coztion.springai.core.vertex.application.model;
+package coztion.springai.core.vertex.application.model.command;
 
 import com.anthropic.models.messages.*;
 import java.util.Collections;
