@@ -22,12 +22,20 @@ public class VertexGenerateCommand {
         return VertexCommandMapper.INSTANCE.toImagenCommand(this);
     }
 
+    public VertexClaudeGenerateCommand toClaudeCommand() {
+        return VertexCommandMapper.INSTANCE.toClaudeCommand(this);
+    }
+
     public boolean isGemini() {
         return config.model.startsWith("gemini");
     }
 
     public boolean isImagen() {
         return config.model.startsWith("imagen");
+    }
+
+    public boolean isClaude() {
+        return config.model.startsWith("claude");
     }
 
     @Getter

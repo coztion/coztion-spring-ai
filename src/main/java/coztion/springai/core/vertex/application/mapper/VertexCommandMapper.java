@@ -1,5 +1,6 @@
 package coztion.springai.core.vertex.application.mapper;
 
+import coztion.springai.core.vertex.application.model.VertexClaudeGenerateCommand;
 import coztion.springai.core.vertex.application.model.VertexGeminiGenerateCommand;
 import coztion.springai.core.vertex.application.model.VertexGenerateCommand;
 import coztion.springai.core.vertex.application.model.VertexImagenGenerateCommand;
@@ -14,4 +15,6 @@ public interface VertexCommandMapper {
     VertexGeminiGenerateCommand toGeminiCommand(VertexGenerateCommand command);
 
     VertexImagenGenerateCommand toImagenCommand(VertexGenerateCommand command);
+
+    VertexClaudeGenerateCommand toClaudeCommand(VertexGenerateCommand command);
 }
