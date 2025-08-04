@@ -16,9 +16,9 @@ import lombok.*;
 @AllArgsConstructor
 public class VertexGeminiGenerateCommand {
 
-    private GeminiPrompt prompt;
+    private VertexGeminiPrompt prompt;
 
-    private GeminiConfig config;
+    private VertexGeminiConfig config;
 
     public Content createContent() {
         return prompt.createContent();
@@ -34,17 +34,17 @@ public class VertexGeminiGenerateCommand {
 
     @Getter
     @Setter
-    public static class GeminiPrompt {
+    public static class VertexGeminiPrompt {
 
         private String text;
 
-        private List<GeminiFile> files;
+        private List<VertexGeminiFile> files;
 
         public Content createContent() {
             Part textPart = Part.builder().text(text).build();
 
             List<Part> fileParts = Optional.ofNullable(files).orElse(Collections.emptyList()).stream()
-                    .map(GeminiFile::toPart)
+                    .map(VertexGeminiFile::toPart)
                     .toList();
 
             List<Part> parts =
@@ -55,7 +55,7 @@ public class VertexGeminiGenerateCommand {
 
         @Getter
         @Setter
-        public static class GeminiFile {
+        public static class VertexGeminiFile {
 
             private String name;
 
@@ -75,7 +75,7 @@ public class VertexGeminiGenerateCommand {
 
     @Getter
     @Setter
-    public static class GeminiConfig {
+    public static class VertexGeminiConfig {
 
         private String model;
 
