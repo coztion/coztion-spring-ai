@@ -2,7 +2,6 @@ package coztion.springai.core.vertex.presentation.model;
 
 import coztion.springai.core.vertex.application.model.VertexGenerateResult;
 import java.util.List;
-
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
