@@ -1,7 +1,7 @@
 package coztion.springai.core.vertex.presentation.mapper;
 
-import coztion.springai.core.vertex.application.model.VertexGenerateCommand;
-import coztion.springai.core.vertex.presentation.model.VertexGenerateRequest;
+import coztion.springai.core.vertex.application.model.command.VertexGenerateCommand;
+import coztion.springai.core.vertex.presentation.model.request.VertexGenerateRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

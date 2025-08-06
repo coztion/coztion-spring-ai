@@ -32,6 +32,8 @@ dependencies {
 
     // AI
     implementation 'com.google.genai:google-genai:1.5.0'
+    implementation "com.anthropic:anthropic-java:2.2.0"
+    implementation "com.anthropic:anthropic-java-vertex:2.2.0"
 
     // Map Struct
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'

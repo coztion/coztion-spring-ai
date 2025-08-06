@@ -1,10 +1,10 @@
 package coztion.springai.core.vertex.presentation.controller;
 
 import coztion.springai.core.shared.presentation.model.RestResponse;
-import coztion.springai.core.vertex.application.model.VertexGenerateCommand;
+import coztion.springai.core.vertex.application.model.command.VertexGenerateCommand;
 import coztion.springai.core.vertex.application.service.VertexService;
-import coztion.springai.core.vertex.presentation.model.VertexGenerateRequest;
-import coztion.springai.core.vertex.presentation.model.VertexGenerateResponse;
+import coztion.springai.core.vertex.presentation.model.request.VertexGenerateRequest;
+import coztion.springai.core.vertex.presentation.model.response.VertexGenerateResponse;
 import coztion.springai.core.vertex.presentation.swagger.VertexSwagger;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

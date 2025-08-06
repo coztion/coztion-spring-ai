@@ -1,6 +1,6 @@
-package coztion.springai.core.vertex.presentation.model;
+package coztion.springai.core.vertex.presentation.model.request;
 
-import coztion.springai.core.vertex.application.model.VertexGenerateCommand;
+import coztion.springai.core.vertex.application.model.command.VertexGenerateCommand;
 import coztion.springai.core.vertex.presentation.mapper.VertexRequestMapper;
 import java.util.List;
 import lombok.Getter;

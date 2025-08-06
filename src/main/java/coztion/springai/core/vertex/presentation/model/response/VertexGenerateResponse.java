@@ -1,6 +1,6 @@
-package coztion.springai.core.vertex.presentation.model;
+package coztion.springai.core.vertex.presentation.model.response;
 
-import coztion.springai.core.vertex.application.model.VertexGenerateResult;
+import coztion.springai.core.vertex.application.model.result.VertexGenerateResult;
 import java.util.List;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -10,7 +10,7 @@ import lombok.Getter;
 @Builder(access = AccessLevel.PRIVATE)
 public class VertexGenerateResponse {
 
-    private boolean isImage;
+    private boolean imageGenerated;
 
     private String generatedText;
 
@@ -18,7 +18,7 @@ public class VertexGenerateResponse {
 
     public static VertexGenerateResponse from(VertexGenerateResult result) {
         return VertexGenerateResponse.builder()
-                .isImage(result.isImage())
+                .imageGenerated(result.isImageGenerated())
                 .generatedText(result.getGeneratedText())
                 .generatedImages(result.getGeneratedImages())
                 .build();

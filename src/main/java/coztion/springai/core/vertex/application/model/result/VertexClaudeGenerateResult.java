@@ -1,4 +1,4 @@
-package coztion.springai.core.vertex.application.model;
+package coztion.springai.core.vertex.application.model.result;
 
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -6,22 +6,22 @@ import lombok.Getter;
 
 @Getter
 @Builder(access = AccessLevel.PRIVATE)
-public class VertexGeminiGenerateResult {
+public class VertexClaudeGenerateResult {
 
     @Builder.Default
     private boolean completed = false;
 
     private String generatedText;
 
-    public static VertexGeminiGenerateResult next(String generatedText) {
-        return VertexGeminiGenerateResult.builder()
+    public static VertexClaudeGenerateResult next(String generatedText) {
+        return VertexClaudeGenerateResult.builder()
                 .completed(false)
                 .generatedText(generatedText)
                 .build();
     }
 
-    public static VertexGeminiGenerateResult complete(String generatedText) {
-        return VertexGeminiGenerateResult.builder()
+    public static VertexClaudeGenerateResult complete(String generatedText) {
+        return VertexClaudeGenerateResult.builder()
                 .completed(true)
                 .generatedText(generatedText)
                 .build();

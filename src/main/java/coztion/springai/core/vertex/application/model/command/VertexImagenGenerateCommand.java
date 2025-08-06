@@ -1,4 +1,4 @@
-package coztion.springai.core.vertex.application.model;
+package coztion.springai.core.vertex.application.model.command;
 
 import com.google.genai.types.GenerateImagesConfig;
 import lombok.AllArgsConstructor;

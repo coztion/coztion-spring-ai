@@ -1,8 +1,8 @@
 package coztion.springai.core.vertex.presentation.swagger;
 
 import coztion.springai.core.shared.presentation.model.RestResponse;
-import coztion.springai.core.vertex.presentation.model.VertexGenerateRequest;
-import coztion.springai.core.vertex.presentation.model.VertexGenerateResponse;
+import coztion.springai.core.vertex.presentation.model.request.VertexGenerateRequest;
+import coztion.springai.core.vertex.presentation.model.response.VertexGenerateResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
