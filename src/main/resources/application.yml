@@ -5,6 +5,5 @@ spring:
 genai:
   google:
     project-id: coztion-vertex
-    location: us-central1
     credentials:
       scope: https://www.googleapis.com/auth/cloud-platform
