@@ -4,8 +4,10 @@ import coztion.springai.core.user.application.model.command.UserSearchCommand;
 import coztion.springai.core.user.infrastructure.mapper.UserParamMapper;
 import java.util.List;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class UserSearchParam {
 
     private List<Long> userIds;

@@ -14,4 +14,12 @@ public interface QueryRepository {
 
         return expression.in(inValues.stream().distinct().toList());
     }
+
+    default <T> BooleanExpression equal(SimpleExpression<T> expression, T value) {
+        if (Objects.isNull(value)) {
+            return null;
+        }
+
+        return expression.eq(value);
+    }
 }
