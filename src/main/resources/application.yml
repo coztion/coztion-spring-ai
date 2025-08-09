@@ -2,8 +2,21 @@ spring:
   application:
     name: coztion-spring-ai
 
-genai:
-  google:
+  datasource:
+    url: jdbc:mysql://localhost:3306/coztion?serverTimezone=UTC&encoding=UTF-8
+    username: root
+    password: 1q2w3e4r!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+cloud:
+  gcp:
     project-id: coztion-vertex
     credentials:
       scope: https://www.googleapis.com/auth/cloud-platform
