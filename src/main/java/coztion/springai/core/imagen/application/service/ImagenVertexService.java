@@ -14,10 +14,10 @@ import reactor.core.publisher.Mono;
 @Service
 class ImagenVertexService {
 
-    @Value("${genai.google.project-id}")
+    @Value("${cloud.gcp.project-id}")
     private String googleProjectId;
 
-    @Value("${genai.google.credentials.scope}")
+    @Value("${cloud.gcp.credentials.scope}")
     private String googleCredentialsScope;
 
     public Mono<ImagenGenerateResult> generate(ImagenGenerateCommand command) {

@@ -18,10 +18,10 @@ import reactor.core.publisher.Flux;
 @Service
 class GeminiVertexService {
 
-    @Value("${genai.google.project-id}")
+    @Value("${cloud.gcp.project-id}")
     private String googleProjectId;
 
-    @Value("${genai.google.credentials.scope}")
+    @Value("${cloud.gcp.credentials.scope}")
     private String googleCredentialsScope;
 
     @SneakyThrows
